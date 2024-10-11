@@ -43,14 +43,18 @@ Use the project in [tp3-heap](../code/tp3-heap) to complete this exercise.
 
 **Input Space Partitioning :**
 We'll define the characteristics and blocks for each strategy. 
-push(T element) Characteristics: 
+
+`push(T element) Characteristics:` 
 Heap size : empty, partially full, full 
 Element value : normal integer, negative integer, large integer 
-pop() Characteristics :
+
+`pop() Characteristics :`
 Heap state : empty, with one element, with multiple elements 
-peek() Characteristics :
+
+`peek() Characteristics :`
 Heap state : empty, with one element, with multiple elements 
-count() Characteristics :
+
+`count() Characteristics :`
 Heap state : empty, with one element, with multiple elements
 
 **Predicates with more than two booleans and MC/DC criteria :** 
