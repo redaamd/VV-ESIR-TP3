@@ -34,7 +34,6 @@ class BinaryHeap<T> {
 
 
     // Method to return the minimum element without removing it
-    @SuppressWarnings("unchecked")
     public T peek() {
         // Check if the heap is empty
         if (size == 0) {
