@@ -37,4 +37,9 @@ Immediately after the call to the prepareSocket, the test checks that-setEnabled
 `testPrepareSocket_AllSupportedProtocols:`
 The test handles the case in which the socket already supports all the required protocols (TLSv1 and TLSv1.2); in this scenario, the prepareSocket must correctly enable the appropriate subset of the protocols.
 
+And finally as we can see when we ran the new refactored the test class it worked : 
+
+![test](https://github.com/user-attachments/assets/d8aac8c5-adcb-4cb4-81c3-77aa1bda1233)
+
+
 
