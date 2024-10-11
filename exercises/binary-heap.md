@@ -40,3 +40,73 @@ Use the following steps to design the test suite:
 Use the project in [tp3-heap](../code/tp3-heap) to complete this exercise.
 
 ## Answer
+
+ **Input Space Partitioning**
+We'll define the characteristics and blocks for each strategy. 
+push(T element) Characteristics: 
+Heap size : empty, partially full, full 
+Element value : normal integer, negative integer, large integer 
+pop() Characteristics :
+Heap state : empty, with one element, with multiple elements 
+peek() Characteristics :
+Heap state : empty, with one element, with multiple elements 
+count() Characteristics :
+Heap state : empty, with one element, with multiple elements
+
+**Predicates with more than two booleans and MC/DC criteria :** 
+In this case, in our BinaryHeap class we don’t have any predicate that uses more than two booleans, so we don't have to apply the MC/DC criteria.
+
+In the first verison our BinaryHeapTest we ran 6 tests as follows : 
+
+![tests](https://github.com/user-attachments/assets/d8e36d23-925b-44c0-abe0-828082fd1403)
+
+And then we ran the PIT test : 
+
+![mutation](https://github.com/user-attachments/assets/1561ad23-8923-4c59-9a35-8ff397483436)
+
+we generated 9 mutation and killed 7 so have a mutation score of 78% and also we have a code coverage line of 95%.
+
+**Mutation Score: 78%**
+
+This score indicates that 78% of the potential mutations in the BinaryHeap class were detected and "killed" by the suite test. The remaining 22% of the mutations survived.
+
+![Capture d’écran 2024-10-11 125947](https://github.com/user-attachments/assets/9f2f4c6f-c589-4e7e-aa91-c3379dc27ffd)
+
+
+Live Mutants : 
+
+Mutant 1 (Line 24): Replaced integer subtraction with addition. moving the last element to the root in the pop() method wasn't tested adequately.
+Mutant 2 (Line 25): Similar to the first mutant, this mutation involves replacing subtraction with addition for the size adjustment.
+
+
+in the second version of our test suite (available in the code exercice), we aimed to increase `code coverage` and `mutation score` by testing all core functionalities of the BinaryHeap class while keeping in mind the objectives
+
+`Push tests:`
+Test push() on both empty and non-empty heaps.
+Verify the correct number of elements is present after the operation (count()).
+
+`Pop tests:`
+Test pop() on empty, single-element, and multi-element heaps.
+Ensure proper behavior and exceptions are thrown when expected (like popping from an empty heap).
+
+`Peek tests:`
+Test peek() on both empty and non-empty heaps.
+Ensure peek() does not remove elements but simply returns the first element.
+
+`Count tests:`
+Verify that count() accurately reflects the number of elements at any given point.
+
+So we successfully ran 9 tests :
+
+![tests](https://github.com/user-attachments/assets/5c5b4459-e76c-49fc-a887-2b2d1a43ff52)
+
+And then when PIT test, we got a great result, we got a mutation score of 100% :
+
+![Capture d’écran 2024-10-11 130602](https://github.com/user-attachments/assets/ad8f53de-05dc-45b3-98b8-581884b31ec7)
+
+
+
+
+
+
+
