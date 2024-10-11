@@ -41,7 +41,7 @@ Use the project in [tp3-heap](../code/tp3-heap) to complete this exercise.
 
 ## Answer
 
- **Input Space Partitioning**
+**Input Space Partitioning :**
 We'll define the characteristics and blocks for each strategy. 
 push(T element) Characteristics: 
 Heap size : empty, partially full, full 
@@ -76,6 +76,7 @@ This score indicates that 78% of the potential mutations in the BinaryHeap class
 Live Mutants : 
 
 Mutant 1 (Line 24): Replaced integer subtraction with addition. moving the last element to the root in the pop() method wasn't tested adequately.
+
 Mutant 2 (Line 25): Similar to the first mutant, this mutation involves replacing subtraction with addition for the size adjustment.
 
 
