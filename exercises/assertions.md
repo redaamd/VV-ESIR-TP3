@@ -68,6 +68,7 @@ Example :
 ![Example](https://github.com/user-attachments/assets/41494ed8-07cd-4905-b9f4-e7e518ad080d)
 
 `Clear intent:` The lambda “->” shows exactly where the exception is expected. 
+
 `More control:` We can assert the exception message or other properties after it's thrown.
 
 
