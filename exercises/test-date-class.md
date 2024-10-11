@@ -53,3 +53,64 @@ Use the project in [tp3-date](../code/tp3-date) to complete this exercise.
 
 ## Answer
 
+**Input Space Partitioning :**
+
+For the isValidDate Method:
+
+`Characteristics:`
+Day (invalid, valid)
+Month (invalid, valid)
+Year (invalid, valid)
+
+`Blocks:`
+Invalid day (negative, >31)
+Valid day (1 to 31)
+Invalid month (<1, >12)
+Valid month (1 to 12)
+Invalid year (negative)
+Valid year (positive)
+
+
+For the isLeapYear Method:
+
+`Characteristics:`
+Year (non-leap, leap)
+
+`Blocks:`
+Leap year (divisible by 4 but not by 100, or divisible by 400)
+Non-leap year
+
+
+For the nextDate Method:
+
+`Characteristics:`
+Date (end of month, end of year, normal day)
+
+`Blocks:`
+End of month (e.g., 31st Jan, 30th Apr)
+End of year (31st Dec)
+Normal day (e.g., 15th Mar)
+
+
+For the previousDate Method:
+
+`Characteristics:`
+Date (start of month, start of year, normal day)
+
+`Blocks:`
+Start of month (1st Feb, 1st May)
+Start of year (1st Jan)
+Normal day (e.g., 15th Mar)
+
+
+For the compareTo Method:
+
+`Characteristics:`
+Date comparison (earlier, same, later)
+
+`Blocks:`
+Earlier date (e.g., 1st Jan vs. 2nd Jan)
+Same date (e.g., 1st Jan vs. 1st Jan)
+Later date (e.g., 2nd Jan vs. 1st Jan)
+
+
