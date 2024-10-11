@@ -40,7 +40,31 @@ Example where assertEquals and assertSame do not produce the same result :
 ![Example](https://github.com/user-attachments/assets/60d8ae18-83c1-482b-8fcf-d144931eec74)
 
 
-3. 
+3. Besides marking code that shouldn't be executed because an exception was expected, ‘fail’ can be used to mark unimplemented tests or to provide custom failure messages when a certain condition isn’t met.
+example: when we are working on a big project and want to make a note to ourselves or to the team that a certain test needs to be written but hasn’t been developed yet.
+
+**Example 1 :**
+
+![Example](https://github.com/user-attachments/assets/c1873e8e-a888-40e6-81d3-211ae5595af3)
+
+This reminds the developer that the test case needs to be written without accidentally forgetting it. 
+
+**Example 2:**  
+
+![Example](https://github.com/user-attachments/assets/fdfde3cc-237c-4832-9c0c-fb7951314373)
+
+in this example fail() is used in a test to ensure that an exception is thrown by a method that is supposed to throw one. 
+So we actually can use fail to assert that a specific piece of code shouldn't be reached in normal execution.
+
+
+4.
+
+
+
+
+
+
+
 
 
 
