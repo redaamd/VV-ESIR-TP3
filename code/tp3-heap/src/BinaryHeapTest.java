@@ -22,14 +22,14 @@ class BinaryHeapTest {
 
     // Test push on non-empty heap
     @Test
-void testPushOnNonEmptyHeap() {
-    BinaryHeap<Integer> heap = new BinaryHeap<Integer>(Comparator.naturalOrder());
-    heap.push(10);
-    heap.push(5);
-    assertEquals(2, heap.count(), "Heap should contain 2 elements after two pushes");
+    void testPushOnNonEmptyHeap() {
+      BinaryHeap<Integer> heap = new BinaryHeap<Integer>(Comparator.naturalOrder());
+      heap.push(10);
+      heap.push(5);
+      assertEquals(2, heap.count(), "Heap should contain 2 elements after two pushes");
    
-    // Expect the last inserted element because no heapifying is performed
-    assertEquals(10, heap.peek(), "Peek should return the last inserted element (5) as heap does not reorder");
+      // Expect the last inserted element because no heapifying is performed
+      assertEquals(10, heap.peek(), "Peek should return the last inserted element (5) as heap does not reorder");
 }
 
 
