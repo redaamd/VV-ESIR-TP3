@@ -45,13 +45,15 @@ example: when we are working on a big project and want to make a note to ourselv
 
 **Example 1 :**
 
-![Example](https://github.com/user-attachments/assets/c1873e8e-a888-40e6-81d3-211ae5595af3)
+![Example](https://github.com/user-attachments/assets/5dadc9ab-f4fa-4741-bf58-7b57fc497482)
+
 
 This reminds the developer that the test case needs to be written without accidentally forgetting it. 
 
 **Example 2:**  
 
-![Example](https://github.com/user-attachments/assets/fdfde3cc-237c-4832-9c0c-fb7951314373)
+![Example](https://github.com/user-attachments/assets/a5ddbe7f-17a1-4b99-adf7-5fd3ba39c9c9)
+
 
 in this example fail() is used in a test to ensure that an exception is thrown by a method that is supposed to throw one. 
 So we actually can use fail to assert that a specific piece of code shouldn't be reached in normal execution.
