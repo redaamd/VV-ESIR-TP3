@@ -52,14 +52,26 @@ This reminds the developer that the test case needs to be written without accide
 
 **Example 2:**  
 
-![Example](https://github.com/user-attachments/assets/a5ddbe7f-17a1-4b99-adf7-5fd3ba39c9c9)
+![Example](https://github.com/user-attachments/assets/1e6e72fc-e44e-4e0b-b821-a29c031bbc10)
 
 
 in this example fail() is used in a test to ensure that an exception is thrown by a method that is supposed to throw one. 
 So we actually can use fail to assert that a specific piece of code shouldn't be reached in normal execution.
 
 
-4.
+4. **Advantages of assertThrows:** 
+
+By using assertThrows we can write assertions after the exception is thrown, which is useful if we want to check the state or test the efficiency of the system after the exception. By using a lambda, it's clear which part of the code is expected to throw the exception. With @Test(expected), we can miss where the exception is coming from if we have some very long code and that is redundant. and also this new feature is more flexible. Meaning we can store the exception in a variable and check its message or properties.
+
+Example : 
+
+![Example](https://github.com/user-attachments/assets/41494ed8-07cd-4905-b9f4-e7e518ad080d)
+
+`Clear intent:` The lambda “->” shows exactly where the exception is expected. 
+`More control:` We can assert the exception message or other properties after it's thrown.
+
+
+
 
 
 
